@@ -21,18 +21,18 @@ class Motor:
             self.tipo=tipo
 
 class Auto:
-    def __init__(self,modelo,precio,asientos,marca,motor,registro,cantidadCreados):
+    def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
-        asientos=[]
-        asientos.append(Asiento)
+        self.asientos=asientos
         self.marca=marca
         self.motor=motor
         self.registro=registro
-        cantidadCreados=cantidadCreados
+ 
         
 
-    def cantidadAsientos(self,asientos):
+    def cantidadAsientos(self):
+        asientos=self.asientos
         return len(asientos)
     
     def verificarIntegridad():
